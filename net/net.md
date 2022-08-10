@@ -182,11 +182,36 @@ CNAME:别名，指向另一个域名
 
 每一层都会加上相应的信息，只有数据链路层会在尾部加上`FCS frame check swquence`数据
 
-![dns parse](./img/osi5.png)
-![dns parse](./img/osi_packet.png)
+![osi5](./img/osi5.png)
+
+![osi_packet](./img/osi_packet.png)
+
+![osi_protocol](./img/osi_protocol.png)
+
+![osi_work](./img/osi_work.png)
 
 表示层会将应用层的数据（图片、视频、文字等）编码为比特流，会将比特流解码成原有的数据
 
 会话层帮助应用管理不同的传输层连接，如qq可能需要和不同的服务器建立连接
 
-##### 
+应用层才有端口号，应用层决定使用的端口号，传输层会使用被告知的端口号进行传输工作
+
+##### 物理层
+
+网线/光纤/空气 等可以充当物理层的介质
+
+
+电信号
+模拟型号 -> 放大器
+数字信号 -> 中继器，数字脉冲衰减快，经过中继器后复原
+
+
+光信号
+1. 单模光纤: 只传输一种光，传输距离和带宽高，用于远距离传输，一般为黄色
+2. 多模光纤: 可以传输多种光，用于短距离传输，如机房，一般为蓝色/橙色
+
+
+网线/双绞线
+![net_line](./img/net_line.png)
+
+![net_line_link](./img/net_line_link.png)
